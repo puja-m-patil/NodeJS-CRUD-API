@@ -7,8 +7,8 @@ module.exports = {
   deleteData: async (query) => {
     try {
       console.log(query);
-      const deleteData = await getUserModel.deleteMany(query);
-      return deleteData;
+      const deletedData = await getUserModel.deleteMany(query);
+      return deletedData;
     } catch (error) {
       throw error;
     }
